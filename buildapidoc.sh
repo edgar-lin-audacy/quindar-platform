@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Building REST API documentation for Quindar platform"
+npm install -g apidoc #Added a global installation for apidoc so that this script can run it from the command line.
 if [ -d "api" ]; then
    echo "...cleaning up /api subfolder"
    rm -fr api
